@@ -1,10 +1,14 @@
-// script.js
 
-document.getElementById('signInForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent page reload
-  const email = document.getElementById('email').value;
-  const password = document.getElementById('password').value;
 
-  // Display user input in an alert (for testing)
-  alert(`Email: ${email}\nPassword: ${password}`);
+const fs = require('fs');
+
+app.post('/submit-form', (req, res) => {
+  const { email, password } = req.body;
+
+  // Save the data to a file
+  const userData = `Email: ${email}, Password: ${password}\n`;
+  fs.appendFileSync('users.txt', userData);
+
+  // Redirect to page3.html
+  res.redirect('/page3.html');
 });
