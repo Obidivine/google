@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+  color: #202124;
+}
+
+header {
+  background: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.google-logo {
+  height: 30px;
+}
+
+.user-profile img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  font-weight: bold;
+  color: #1a73e8;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+}
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card button {
+  margin-top: 10px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #155bb5;
+}
+
+.extra-options {
+  margin-top: 20px;
+}
+
+.extra-options ul {
+  list-style: none;
+  padding: 0;
+}
+
+.extra-options ul li {
+  margin: 5px 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 14px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+
+footer a {
+  margin: 0 10px;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+.card p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.card p strong {
+  color: #d93025; /* Highlight labels in red for emphasis */
+}
+
+.card-section .card:first-child {
+  border-left: 5px solid #d93025; /* Highlight this card specifically */
+}
+button:hover {
+  background: #0b5ed7; /* Darker blue */
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
